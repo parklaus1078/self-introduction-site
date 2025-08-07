@@ -129,33 +129,9 @@
     .main {
       align-items: center;
 
-      ol {
-        text-align: center;
-      }
-
-      @keyframes blink {
-        from,
-        to {
-          color: transparent;
-        }
-        50% {
-          color: inherit; 
-        }
-      }
-
-      h1 {
-        font-family: monospace; 
-        font-size: 2rem;
-        padding: 2rem;
-        
-        .cursor {
-          font-weight: 300; 
-          margin-left: 2px;
-          animation: blink 1s step-end infinite;
-        }
-      }
-
-
+      // ol {
+      //   text-align: center;
+      // }
     }
 
     .ctas {
