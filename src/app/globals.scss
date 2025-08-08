@@ -1,0 +1,56 @@
+
+:root {
+  --bg: #0b0b0b;
+  --fg: #e5e7eb;
+  --muted: #94a3b8;
+  --green: #39ff14;
+  --maxw: 980px;
+}
+
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.55;
+}
+
+main { display: block; }
+
+/* reveal utility (used by Reveal wrapper) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* basic containers & headings */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.25;
+}
+h1 { font-size: clamp(2.2rem, 3vw + 1.5rem, 3.2rem); }
+h2 { font-size: clamp(1.6rem, 1.5vw + 1rem, 2.1rem); }
+h3 { font-size: clamp(1.25rem, 1vw + .875rem, 1.5rem); }
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+hr {
+  border: none;
+  border-top: 1px solid #20262d;
+  margin: 2rem 0;
+}
